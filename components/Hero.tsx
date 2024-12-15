@@ -6,46 +6,46 @@ const Hero = () => {
     return (
         <>
             <main className="w-full min-h-screen flex items-center justify-center gap-10">
-                <div className="p-4 max-w-7xl  mx-auto relative z-10  w-full pt-20 md:pt-0">
-                    <h1 className="text-4xl md:text-7xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">
+                <div className="p-4 max-w-7xl mx-auto relative z-10 w-full pt-20 md:pt-0">
+                    <h1 className="text-4xl md:text-7xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-700 to-neutral-900 dark:from-neutral-50 dark:to-neutral-400 bg-opacity-50">
                         Hey its me, <span className="text-[#f78764]">Sakib</span> <br />{" "}
                         Trust me, I&apos;m a{" "}
                         <Cover>
                             Developer
                         </Cover>
                     </h1>
-                    <p className="mt-4 font-normal text-xs md:text-base text-neutral-300/70 max-w-lg text-center mx-auto leading-relaxed">
-                        <span className="text-white/80 font-ld text-xs md:text-sm">
+                    <p className="mt-4 font-normal text-xs md:text-base text-neutral-800/70 dark:text-neutral-300/70 max-w-lg text-center mx-auto leading-relaxed">
+                        <span className="text-neutral-700 dark:text-white/80 font-ld text-xs md:text-sm">
                             Why Work With Me?
                         </span>{" "}
                         I’m a{" "}
-                        <span className="text-white/80 font-">
+                        <span className="text-neutral-800 dark:text-white/80">
                             hardworking full-stack developer
                         </span>{" "}
                         with strong expertise in backend technologies like
-                        <span className="text-white/80 font-"> RESTful APIs</span>,{" "}
-                        <span className="text-white/80 font-">Socket.IO</span>,
-                        <span className="text-white/80 font-"> Kafka</span>,{" "}
-                        <span className="text-white/80 font-">Docker</span>,
-                        <span className="text-white/80 font-"> AWS</span> etc. and databases
-                        (<span className="text-white/80 font-">MongoDB</span> and
-                        <span className="text-white/80 font-"> PostgreSQL</span>).
+                        <span className="text-neutral-800 dark:text-white/80"> RESTful APIs</span>,{" "}
+                        <span className="text-neutral-800 dark:text-white/80">Socket.IO</span>,{" "}
+                        <span className="text-neutral-800 dark:text-white/80">Kafka</span>,{" "}
+                        <span className="text-neutral-800 dark:text-white/80">Docker</span>,{" "}
+                        <span className="text-neutral-800 dark:text-white/80">AWS</span>, etc., and databases
+                        (<span className="text-neutral-800 dark:text-white/80">MongoDB</span> and{" "}
+                        <span className="text-neutral-800 dark:text-white/80">PostgreSQL</span>).
                         {/* <br /> */}
                         On the frontend, I work with{" "}
-                        <span className="text-white/80 font-">React.js</span>,
-                        <span className="text-white/80 font-"> Redux Toolkit</span>, and{" "}
-                        <span className="text-white/80 font-">React Hook Form</span>, while
-                        learning <span className="text-white/80 font-">Next.js</span> and{" "}
-                        <span className="text-white/80 font-">TypeScript</span>.
+                        <span className="text-neutral-800 dark:text-white/80">React.js</span>,{" "}
+                        <span className="text-neutral-800 dark:text-white/80">Redux Toolkit</span>, and{" "}
+                        <span className="text-neutral-800 dark:text-white/80">React Hook Form</span>, while
+                        learning <span className="text-neutral-800 dark:text-white/80">Next.js</span> and{" "}
+                        <span className="text-neutral-800 dark:text-white/80">TypeScript</span>.
                         {/* <br /> */}
                         I’m dedicated to building{" "}
-                        <span className="text-white/80 font-">robust</span>,{" "}
-                        <span className="text-white/80 font-">scalable</span>, and{" "}
-                        <span className="text-white/80 font-">user-friendly</span>{" "}
+                        <span className="text-neutral-800 dark:text-white/80">robust</span>,{" "}
+                        <span className="text-neutral-800 dark:text-white/80">scalable</span>, and{" "}
+                        <span className="text-neutral-800 dark:text-white/80">user-friendly</span>{" "}
                         solutions.
                     </p>
 
-                    <p className="text-center text-white/40 font-extralight">~ChatGpt</p>
+                    <p className="text-center text-neutral-600 dark:text-white/40 font-extralight">~ChatGpt</p>
                 </div>
             </main>
 
@@ -56,7 +56,7 @@ const Hero = () => {
 
                 {/* Button */}
                 <div className="absolute inset-0 flex items-center justify-center z-20">
-                    <button className="bg-white text-black py-2 px-8 text-lg font-semibold rounded-full shadow-lg">
+                    <button className="bg-neutral-900 text-white py-2 px-6 md:px-8 text-md md:text-lg font-semibold rounded-full shadow-lg dark:bg-white dark:text-black">
                         Ask Me Anything
                     </button>
                 </div>
