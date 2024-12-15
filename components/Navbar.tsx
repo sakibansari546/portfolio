@@ -45,11 +45,13 @@ export function Navbar() {
         },
     ];
     return (
-        <div className="flex items-center justify-center  w-full fixed top-10 z-50">
-            <FloatingDock
-                mobileClassName="translate-y-20" // only for demo, remove for production
-                items={links}
-            />
-        </div>
+        <header className="flex items-center justify-center  w-full fixed top-10 z-50">
+            <nav>
+                <FloatingDock
+                    mobileClassName="translate-y-20" // only for demo, remove for production
+                    items={links}
+                />
+            </nav>
+        </header>
     );
 }
