@@ -10,7 +10,7 @@ export default function Footer() {
             <footer className="dark:bg-black bg-white dark:text-white flex items-center justify-center w-full py-14">
                 <div className="">
                     <div className="flex gap-3 items-center text-center justify-center">
-                        <Image className="rounded-full object-cover" src="https://via.placeholder.com/45" alt="logo" width={45} height={45} />
+                        <Image className="rounded-full overflow-hidden w-12 h-12 object-cover" src="/logo.jpg" alt="logo" width={45} height={45} />
                         <p className="text-xl md:text-2xl font-bold">Sakib.dev</p>
                     </div>
                     <div className="text-center space-x-10 py-5 font-light">

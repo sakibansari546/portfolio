@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import { FloatingDock } from "@/components/ui/floating-dock";
 import { Navbar } from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
@@ -16,8 +15,11 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Portfolio",
+  title: "Sakib Ansari - Web Developer",
   description: "This is Sakib personal Portfolio",
+  icons: {
+    icon: "/logo.jpg",
+  },
 };
 
 export default function RootLayout({

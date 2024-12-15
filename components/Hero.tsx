@@ -15,33 +15,33 @@ const Hero = () => {
                         </Cover>
                     </h1>
                     <p className="mt-4 font-normal text-xs md:text-base text-neutral-800/70 dark:text-neutral-300/70 max-w-lg text-center mx-auto leading-relaxed">
-                        <span className="text-neutral-700 dark:text-white/80 font-ld text-xs md:text-sm">
+                        <span className=" font-ld text-xs md:text-sm">
                             Why Work With Me?
                         </span>{" "}
                         I’m a{" "}
-                        <span className="text-neutral-800 dark:text-white/80">
+                        <span className="">
                             hardworking full-stack developer
                         </span>{" "}
                         with strong expertise in backend technologies like
-                        <span className="text-neutral-800 dark:text-white/80"> RESTful APIs</span>,{" "}
-                        <span className="text-neutral-800 dark:text-white/80">Socket.IO</span>,{" "}
-                        <span className="text-neutral-800 dark:text-white/80">Kafka</span>,{" "}
-                        <span className="text-neutral-800 dark:text-white/80">Docker</span>,{" "}
-                        <span className="text-neutral-800 dark:text-white/80">AWS</span>, etc., and databases
-                        (<span className="text-neutral-800 dark:text-white/80">MongoDB</span> and{" "}
-                        <span className="text-neutral-800 dark:text-white/80">PostgreSQL</span>).
+                        <span className=""> RESTful APIs</span>,{" "}
+                        <span className="">Socket.IO</span>,{" "}
+                        <span className="">Kafka</span>,{" "}
+                        <span className="">Docker</span>,{" "}
+                        <span className="">AWS</span>, etc., and databases
+                        (<span className="">MongoDB</span> and{" "}
+                        <span className="">PostgreSQL</span>).
                         {/* <br /> */}
                         On the frontend, I work with{" "}
-                        <span className="text-neutral-800 dark:text-white/80">React.js</span>,{" "}
-                        <span className="text-neutral-800 dark:text-white/80">Redux Toolkit</span>, and{" "}
-                        <span className="text-neutral-800 dark:text-white/80">React Hook Form</span>, while
-                        learning <span className="text-neutral-800 dark:text-white/80">Next.js</span> and{" "}
-                        <span className="text-neutral-800 dark:text-white/80">TypeScript</span>.
+                        <span className="">React.js</span>,{" "}
+                        <span className="">Redux Toolkit</span>, and{" "}
+                        <span className="">React Hook Form</span>, while
+                        learning <span className="">Next.js</span> and{" "}
+                        <span className="">TypeScript</span>.
                         {/* <br /> */}
                         I’m dedicated to building{" "}
-                        <span className="text-neutral-800 dark:text-white/80">robust</span>,{" "}
-                        <span className="text-neutral-800 dark:text-white/80">scalable</span>, and{" "}
-                        <span className="text-neutral-800 dark:text-white/80">user-friendly</span>{" "}
+                        <span className="">robust</span>,{" "}
+                        <span className="">scalable</span>, and{" "}
+                        <span className="">user-friendly</span>{" "}
                         solutions.
                     </p>
 
