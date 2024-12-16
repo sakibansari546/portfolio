@@ -1,57 +1,54 @@
-import React from "react";
-import { FloatingDock } from "@/components/ui/floating-dock";
-import {
-    IconBuilding,
-    IconFlare,
-    IconHome,
-} from "@tabler/icons-react";
+"use client"
+
 import Image from "next/image";
+import Link from "next/link";
+import React, { useState, useEffect } from "react";
 
 export function Navbar() {
-    const links = [
-        {
-            title: "Home",
-            icon: (
-                <IconHome className="h-32 w-32 text-neutral-500 dark:text-neutral-300" />
-            ),
-            href: "#",
-        },
+    const [isOpen, setIsOpen] = useState(false);
 
-        {
-            title: "Projects",
-            icon: (
-                <IconBuilding className="h-32 w-32 text-neutral-500 dark:text-neutral-300" />
-            ),
-            href: "#",
-        },
-        {
-            title: "AI",
-            icon: (
-                <IconFlare className="h-32 w-32 text-neutral-500 dark:text-neutral-300" />
-            ),
-            href: "#",
-        },
-        {
-            title: "Aceternity UI",
-            icon: (
-                <Image
-                    src="https://assets.aceternity.com/logo-dark.png"
-                    width={20}
-                    height={20}
-                    alt="Aceternity Logo"
-                />
-            ),
-            href: "#",
-        },
-    ];
     return (
-        <header className="flex items-center justify-center  w-full fixed top-10 z-50">
-            <nav>
-                <FloatingDock
-                    mobileClassName="translate-y-20" // only for demo, remove for production
-                    items={links}
-                />
-            </nav>
+        <header onBlurCapture={() => setTimeout(() => setIsOpen(false), 50)} className="bg-white dark:bg-neutral-900 dark:text-white w-full sticky h-16 top-0 z-50 py-3 px-4 md:px-20">
+            <div className="flex items-center justify-between">
+                <div>
+                    <Link href='/' className="logo">
+                        <Image
+                            src='/logo.jpg'
+                            alt="logo"
+                            width={56}
+                            height={56}
+                            className="rounded-full overflow-hidden object-cover w-10 h-10 sm:w-14 sm:h-14"
+                        />
+                    </Link>
+                </div>
+                <nav>
+                    {/* Hamburger button for mobile */}
+                    <button className="md:hidden p-2" onClick={() => setIsOpen(!isOpen)}>
+                        <div className={`w-6 h-0.5 bg-black dark:bg-white mb-1.5 transition-all duration-300 ${isOpen ? 'rotate-45 translate-y-2' : ''}`}></div>
+                        <div className={`w-6 h-0.5 bg-black dark:bg-white mb-1.5 transition-opacity duration-300 ${isOpen ? 'opacity-0' : 'opacity-100'}`}></div>
+                        <div className={`w-6 h-0.5 bg-black dark:bg-white transition-all duration-300 ${isOpen ? '-rotate-45 -translate-y-2' : ''}`}></div>
+                    </button>
+
+                    {/* Navigation menu */}
+                    <ul className={`flex flex-col md:flex-row absolute md:relative right-0 left-0 top-16 md:top-0 
+                bg-white dark:bg-neutral-900 md:bg-transparent
+                transition-all duration-300 ease-in-out
+                ${isOpen ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-2 md:opacity-100 md:translate-y-0'} 
+                ${isOpen ? 'block' : 'hidden'} md:flex
+                items-center md:justify-center gap-10 text-lg
+                p-4 md:p-0`}>
+                        <li className="transform transition hover:scale-110">
+                            <Link href='/about'>About</Link>
+                        </li>
+                        <li className="transform transition hover:scale-110">
+                            <Link href='/project'>Projects</Link>
+                        </li>
+                        <li className="transform transition hover:scale-110">
+                            <Link href='/contact'>Contact</Link>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
         </header>
     );
 }
