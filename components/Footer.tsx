@@ -19,9 +19,12 @@ export default function Footer() {
                         <Link href='#'>Contact</Link>
                     </div>
                     <div className="flex items-center justify-center w-full gap-8 text-lg text-neutral-700 dark:text-netural-200">
-                        <Link href="https://github.com"><BsGithub /></Link>
-                        <Link href="https://twitter.com"><BsTwitterX /></Link>
-                        <Link href="https://linkedin.com"><LiaLinkedin size={25} /></Link>                    </div>
+                        <Link className="text-gray-400 hover:text-white transition-colors"
+                            href="https://github.com"><BsGithub /></Link>
+                        <Link className="text-gray-400 hover:text-white transition-colors"
+                            href="https://twitter.com"><BsTwitterX /></Link>
+                        <Link className="text-gray-400 hover:text-white transition-colors"
+                            href="https://linkedin.com"><LiaLinkedin size={25} /></Link>                    </div>
                 </div>
             </footer>
         </>
