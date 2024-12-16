@@ -2,16 +2,16 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 
 export function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <header onBlurCapture={() => setTimeout(() => setIsOpen(false), 50)} className="bg-white dark:bg-neutral-900 dark:text-white w-full sticky h-16 top-0 z-50 py-3 px-4 md:px-20">
+        <header onBlurCapture={() => setTimeout(() => setIsOpen(false), 50)} className="bg-white dark:bg-neutral-900 dark:text-white w-full sticky  top-0 z-50 py-4 px-4 md:px-20">
             <div className="flex items-center justify-between">
-                <div>
-                    <Link href='/' className="logo">
+                <div className="">
+                    <Link href='/' className="logo flex items-center gap-3">
                         <Image
                             src='/logo.jpg'
                             alt="logo"
@@ -19,6 +19,7 @@ export function Navbar() {
                             height={56}
                             className="rounded-full overflow-hidden object-cover w-10 h-10 sm:w-14 sm:h-14"
                         />
+                        <h1 className="text-lg md:text-2xl font-semibold">Sakib</h1>
                     </Link>
                 </div>
                 <nav>
