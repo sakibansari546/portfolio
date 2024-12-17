@@ -18,7 +18,7 @@ export default async function ProjectWrapper() {
             <div className="flex items-center justify-center gap-5 flex-wrap">
                 {
                     projects.map((project) => (
-                        <Project key={project.id} />
+                        <Project key={project.id} project={project} />
                     ))
                 }
             </div>
