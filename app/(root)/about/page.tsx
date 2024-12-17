@@ -64,18 +64,18 @@ export default function Page() {
                     <p className="">
                         Over time, I’ve built a solid foundation in technologies like React.js, Next.js, Redux Toolkit, Tailwind CSS, SASS, React Hook Form, and basic TypeScript on the frontend, as well as Node.js, Express.js, MongoDB, PostgressSQL and Prisma on the backend. I’ve also explored real-time communication using Socket.IO and love experimenting with new frameworks and tools to enhance my skills. Through my projects, I’ve tackled real-world challenges, including a social media app for connecting users {' '}
                         <Link href="https://example.com/social-media" target="_blank" rel="noopener noreferrer" className="text-[#f78764] hover:underline">
-                            Socialize
+                            *Socialize*
                         </Link>, a credit management system  for small businesses{' '}
                         <Link href="https://example.com/credit-management" target="_blank" rel="noopener noreferrer" className="text-[#f78764] hover:underline">
-                            Pended
+                            *Pended*
                         </Link>
-                        , a secure authentication system with 2FA, forgot password, and sending email features{' '}
+                        , a secure authentication system with 2FA, forgot password, and Email verification features{' '}
                         <Link href="https://example.com/authentication-system" target="_blank" rel="noopener noreferrer" className="text-[#f78764] hover:underline">
-                            Authentication
+                            *Authentication*
                         </Link>
                         , and a  chat application  for real-time communication{' '}
                         <Link href="https://example.com/chat-app" target="_blank" rel="noopener noreferrer" className="text-[#f78764] hover:underline">
-                            Chatify.
+                            *Chatify*.
                         </Link>
                     </p>
 

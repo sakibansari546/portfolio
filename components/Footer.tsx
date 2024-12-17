@@ -17,7 +17,7 @@ export default function Footer() {
                             alt="logo"
                             src='/logo.jpg'
                         />
-                        <p className="text-xl md:text-2xl font-bold">Sakib.dev</p>
+                        <p className="text-xl md:text-2xl font-bold">Sakib.<span className="text-[#f78764]">dev</span></p>
                     </div>
                     <div className="text-center space-x-10 py-5 font-light">
                         <Link href='/about'>About</Link>

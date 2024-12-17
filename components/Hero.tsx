@@ -8,14 +8,14 @@ const Hero = () => {
             {/* Hero Section */}
             <section className="w-full min-h-[80vh] flex items-center justify-start gap-10 bg-gradient-tob from-neutral100/30 via-white/30 to-neutral-200/30 dark:from-neutral-800 dark:via-neutral-900 dark:to-black">
                 <div className="p-4 max-w-7xl mx-auto relative z-10 w-full pt-20 md:pt-0">
-                    <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold text-left bg-clip-text text-transparent bg-gradient-to-b from-neutral-700 to-neutral-900 dark:from-white dark:to-neutral-400 bg-opacity-70 leading-tight">
+                    <h1 className="text-4xl sm:text-4xl md:text-6xl lg:text-7xl font-bold text-left bg-clip-text text-transparent text-black dark:text-white bg-opacity-70 leading-tight">
                         Hey, It&apos;s me <span className="text-[#f78764]">Sakib</span> <br />
                         Trust me, I&apos;m a{" "}
                         <Cover>
                             Developer
                         </Cover>
                     </h1>
-                    <p className="mt-4 font-normal text-sm sm:text-lg md:text-lg text-neutral-900 dark:text-neutral-300 max-w-xl text-left leading-relaxed">
+                    <p className="mt-4 font-normal text-sm sm:text-lg md:text-[1.2rem] text-neutral-900 dark:text-neutral-300 max-w-xl text-left leading-relaxed">
                         Meet Sakib Ansari, a full-stack web developer passionate about creating smooth and impactful digital solutions. From designing user-friendly frontend interfaces to building strong backend systems, I love turning ideas into reality with clean and efficient code. Let’s build something amazing together!
                     </p>
                     <p className="text-left text-neutral-600 dark:text-neutral-400 font-extralight mt-4 text-sm sm:text-lg">

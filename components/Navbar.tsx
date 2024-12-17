@@ -19,7 +19,7 @@ export function Navbar() {
                             height={56}
                             className="rounded-full overflow-hidden object-cover w-10 h-10 sm:w-14 sm:h-14"
                         />
-                        <h1 className="text-lg md:text-2xl font-semibold">Sakib</h1>
+                        <h1 className="text-xl md:text-3xl font-bold">Sak<span className="text-[#f78764]">ib</span></h1>
                     </Link>
                 </div>
                 <nav>
