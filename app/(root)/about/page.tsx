@@ -1,6 +1,8 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import { Github, Linkedin, Twitter, Youtube } from 'lucide-react'
+import { Github, Linkedin, Twitter } from 'lucide-react'
+import { BsGithub, BsTwitterX } from 'react-icons/bs'
+import { LiaLinkedin } from 'react-icons/lia'
 
 export default function Page() {
     return (
@@ -24,34 +26,30 @@ export default function Page() {
                             />
                         </div>
                         {/* Social Links */}
-                        <div className="flex gap-6">
+                        <div className="flex items-center gap-6">
                             <Link
-                                href="#"
+                                href="https://github.com/sakibansari546"
+                                target="_blank"
                                 className="text-gray-400 hover:text-white transition-colors"
-                                aria-label="YouTube"
+                                aria-label="Github"
                             >
-                                <Youtube size={24} />
+                                <BsGithub size={22} />
                             </Link>
                             <Link
-                                href="#"
+                                href="https://x.com/Sakib_654"
+                                target="_blank"
                                 className="text-gray-400 hover:text-white transition-colors"
                                 aria-label="Twitter"
                             >
-                                <Twitter size={24} />
+                                <BsTwitterX size={22} />
                             </Link>
                             <Link
-                                href="#"
+                                href="https://www.linkedin.com/in/sakib-ansari-61388326b/"
+                                target='_blank'
                                 className="text-gray-400 hover:text-white transition-colors"
                                 aria-label="LinkedIn"
                             >
-                                <Linkedin size={24} />
-                            </Link>
-                            <Link
-                                href="#"
-                                className="text-gray-400 hover:text-white transition-colors"
-                                aria-label="GitHub"
-                            >
-                                <Github size={24} />
+                                <LiaLinkedin size={28} />
                             </Link>
                         </div>
                     </div>

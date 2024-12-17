@@ -20,17 +20,18 @@ export default function Footer() {
                         <p className="text-xl md:text-2xl font-bold">Sakib.dev</p>
                     </div>
                     <div className="text-center space-x-10 py-5 font-light">
-                        <Link href='#'>About</Link>
-                        <Link href='#'>Projects</Link>
-                        <Link href='#'>Contact</Link>
+                        <Link href='/about'>About</Link>
+                        <Link href='/project'>Projects</Link>
+                        <Link href='/contact'>Contact</Link>
                     </div>
                     <div className="flex items-center justify-center w-full gap-8 text-lg text-neutral-700 dark:text-netural-200">
                         <Link className="text-gray-400 hover:text-white transition-colors"
-                            href="https://github.com"><BsGithub /></Link>
+                            href="https://github.com/sakibansari546"><BsGithub /></Link>
                         <Link className="text-gray-400 hover:text-white transition-colors"
-                            href="https://twitter.com"><BsTwitterX /></Link>
+                            href="https://twitter.com/Sakib_654"><BsTwitterX /></Link>
                         <Link className="text-gray-400 hover:text-white transition-colors"
-                            href="https://linkedin.com"><LiaLinkedin size={25} /></Link>                    </div>
+                            href="https://www.linkedin.com/in/sakib-ansari-61388326b/"><LiaLinkedin size={25} /></Link>
+                    </div>
                 </div>
             </footer>
         </>

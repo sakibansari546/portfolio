@@ -57,7 +57,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
                     Which Skills I have?
                 </h2>
                 <p className="text-neutral-700 dark:text-neutral-300 text-md md:text-base max-w-sm">
-                    I&apos;ve expreince both side Frontend and Backend with varius technology.
+                    I have experience working on both frontend and backend using various technologies.
                 </p>
             </div>
 
