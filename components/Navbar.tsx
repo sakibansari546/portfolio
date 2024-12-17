@@ -8,7 +8,7 @@ export function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <header onBlurCapture={() => setTimeout(() => setIsOpen(false), 50)} className="bg-white dark:bg-neutral-900 dark:text-white w-full sticky  top-0 z-50 py-4 px-4 md:px-20">
+        <header onBlurCapture={() => setTimeout(() => setIsOpen(false), 50)} className="bg-white dark:bg-black dark:text-white w-full sticky  top-0 z-50 py-4 px-4 md:px-20 border-b border-gray-100/30">
             <div className="flex items-center justify-between">
                 <div className="">
                     <Link href='/' className="logo flex items-center gap-3">
@@ -32,20 +32,26 @@ export function Navbar() {
 
                     {/* Navigation menu */}
                     <ul className={`flex flex-col md:flex-row absolute md:relative right-0 left-0 top-16 md:top-0 
-                bg-white dark:bg-neutral-900 md:bg-transparent
+                bg-white dark:bg-black md:bg-transparent
                 transition-all duration-300 ease-in-out
-                ${isOpen ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-2 md:opacity-100 md:translate-y-0'} 
+                ${isOpen ? 'opacity-100 translate-y-0 font-bold' : 'opacity-0 -translate-y-2 md:opacity-100 md:translate-y-0 font-normal'} 
                 ${isOpen ? 'block' : 'hidden'} md:flex
                 items-center md:justify-center gap-10 text-lg
                 p-4 md:p-0`}>
                         <li className="transform transition hover:scale-110">
-                            <Link href='/about'>About</Link>
+                            <Link href='/about'
+                                className={``}
+                            >About</Link>
                         </li>
                         <li className="transform transition hover:scale-110">
-                            <Link href='/project'>Projects</Link>
+                            <Link href='/project'
+                                className={``}
+                            >Projects</Link>
                         </li>
                         <li className="transform transition hover:scale-110">
-                            <Link href='/contact'>Contact</Link>
+                            <Link href='/contact'
+                                className={``}
+                            >Contact</Link>
                         </li>
                     </ul>
                 </nav>
