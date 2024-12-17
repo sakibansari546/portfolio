@@ -5,14 +5,14 @@ import React from "react";
 import { CardBody, CardContainer, CardItem } from "./ui/3d-card";
 import Link from "next/link";
 
+
 export default function Project({ project }) {
     const { name, short_desc, image, github, live, id } = project;
 
     return (
+
         <CardContainer className="inter-var">
-            {/* Wrap the whole CardBody inside Link, no need for nested <a> tag */}
-            {/* <Link href={`/projects/${id}`}> */}
-            <CardBody className="bg-gray-50 min-h-[400px] relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-[#f78764] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border ">
+            <CardBody className="bg-gray-50 min-h-[400px] relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-[#f78764] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border ">
                 <CardItem
                     translateZ="50"
                     className="text-xl font-bold text-neutral-600 dark:text-white"
@@ -22,7 +22,7 @@ export default function Project({ project }) {
                 <CardItem
                     as="p"
                     translateZ="60"
-                    className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300"
+                    className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300 mb-4"
                 >
                     {short_desc}
                 </CardItem>
@@ -36,10 +36,9 @@ export default function Project({ project }) {
                     />
                 </CardItem>
                 <div className="flex justify-between items-center mt-20">
-                    {/* For external links, you don't need to wrap them in Link again */}
                     <CardItem
                         translateZ={20}
-                        as="a"
+                        as={Link}
                         href={live}
                         target="__blank"
                         className="px-4 py-2 rounded-xl text-xs font-normal dark:text-white"
@@ -48,7 +47,7 @@ export default function Project({ project }) {
                     </CardItem>
                     <CardItem
                         translateZ={20}
-                        as="a"
+                        as={Link}
                         href={github}
                         target="__blank"
                         className="px-4 py-2 rounded-xl dark:text-white hover:underline text-black text-sm font-bold"
@@ -57,7 +56,6 @@ export default function Project({ project }) {
                     </CardItem>
                 </div>
             </CardBody>
-            {/* </Link> */}
         </CardContainer>
     );
 }
