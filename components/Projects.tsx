@@ -1,16 +1,18 @@
 // // import { prisma } from "@/app/seeds/projects";
+// import { Suspense } from "react";
+
 // import ProjectHeading from "./ProjectHeading";
 // import ProjectWrapper from "./ProjectWrapper";
+// import ProjectsSkeleton from "./skeletons/ProjectsSkeleton";
 
 // export default async function Projects() {
-//     // const projects = await prisma.project.findMany();
+//     // const projects = await prisma.project.findMany({ include: { technology: true } });
 //     return (
 //         <section className="projects">
 //             <ProjectHeading />
-
-//             <div>
+//             <Suspense fallback={<ProjectsSkeleton />} >
 //                 <ProjectWrapper />
-//             </div>
+//             </Suspense>
 //         </section>
 //     )
 // }

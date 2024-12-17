@@ -44,7 +44,7 @@ export function Navbar() {
                             >About</Link>
                         </li>
                         <li className="transform transition hover:scale-110">
-                            <Link href='/project'
+                            <Link href='/projects'
                                 className={``}
                             >Projects</Link>
                         </li>
