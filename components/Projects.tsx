@@ -1,15 +1,16 @@
-import ProjectHeading from "./ProjectHeading";
-import ProjectWrapper from "./ProjectWrapper";
+// // import { prisma } from "@/app/seeds/projects";
+// import ProjectHeading from "./ProjectHeading";
+// import ProjectWrapper from "./ProjectWrapper";
 
-export default function Projects() {
+// export default async function Projects() {
+//     // const projects = await prisma.project.findMany();
+//     return (
+//         <section className="projects">
+//             <ProjectHeading />
 
-    return (
-        <section className="projects">
-            <ProjectHeading />
-
-            <div>
-                <ProjectWrapper />
-            </div>
-        </section>
-    )
-}
+//             <div>
+//                 <ProjectWrapper />
+//             </div>
+//         </section>
+//     )
+// }

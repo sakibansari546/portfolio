@@ -1,6 +1,5 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import { Github, Linkedin, Twitter } from 'lucide-react'
 import { BsGithub, BsTwitterX } from 'react-icons/bs'
 import { LiaLinkedin } from 'react-icons/lia'
 
