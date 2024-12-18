@@ -5,11 +5,11 @@ import { LiaLinkedin } from 'react-icons/lia'
 
 export default function Page() {
     return (
-        <main className="min-h-screen bg-black text-gray-300 px-4 md:px-8 py-8 ">
+        <main className="min-h-screen bg-white dark:bg-black dark:text-gray-300 px-4 md:px-8 py-8 ">
             <div className="max-w-6xl mx-auto">
                 {/* Hero Section */}
                 <div className="flex flex-col-reverse md:flex-row justify-between items-start md:items-center gap-8">
-                    <h1 className="text-4xl md:text-6xl font-bold text-white">
+                    <h1 className="text-4xl md:text-6xl font-bold text-black dark:text-white">
                         Hey! I&apos;m{' '}
                         <span className="text-[#f78764]">Sakib Ansari</span>{' '}
                         and I&apos;m a full stack developer.

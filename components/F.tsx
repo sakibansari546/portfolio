@@ -7,8 +7,8 @@ import { InfiniteMovingCards } from "./ui/infinite-moving-cards";
 
 export function Features() {
     return (
-        <div className="py-32">
-            <h1 className="text-5xl text-black font-bold dark:text-white text-center pb-14">
+        <div className="py-32 dark:bg-black bg-white">
+            <h1 className="text-5xl text-black font-bold  dark:text-white text-center pb-14">
                 Some <span className="text-[#f78764]">Memories</span>
             </h1>
             <div className="h-[40rem] rounded-md flex flex-col antialiased bg-white dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">

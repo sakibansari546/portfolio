@@ -5,7 +5,7 @@ export default function Page() {
     return (
         <>
             {/* Contact Form Section */}
-            <div className="relative min-h-[87vh] flex items-center justify-center">
+            <div className="relative min-h-[87vh] flex items-center justify-center bg-white dark:bg-black">
                 {/* Spotlight */}
                 <Spotlight className="absolute -top-10 -left-10 md:-top-32 md:-left-20" fill="white" />
 

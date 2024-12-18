@@ -8,7 +8,7 @@ export function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <header onBlurCapture={() => setTimeout(() => setIsOpen(false), 50)} className="bg-white dark:bg-black dark:text-white w-full sticky  top-0 z-50 py-4 px-4 md:px-20 border-b border-gray-100/30">
+        <header onBlurCapture={() => setTimeout(() => setIsOpen(false), 50)} className="bg-white dark:bg-black dark:text-white w-full sticky  top-0 z-50 py-4 px-4 md:px-20 border-b border-gray-700/30">
             <div className="flex items-center justify-between">
                 <div className="">
                     <Link href='/' className="logo flex items-center gap-3">
