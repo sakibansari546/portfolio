@@ -6,33 +6,34 @@ export async function createProjects() {
   try {
     const project = await prisma.project.create({
       data: {
-        name: "Pended",
-        short_desc: "A credit management system for small businesses.",
+        name: "Chatify",
+        short_desc:
+          "A real-time chat application to connect with friends and colleagues.",
         description:
-          "Pended is a credit management system designed to simplify the way small businesses manage their transactions. With Pended, shopkeepers can create customer profiles, track pending and received payments, and calculate balances automatically. The platform supports uploading customer images and attaching relevant project images to make records visually intuitive. It also includes advanced security features such as two-factor authentication and email verification for account protection. Shopkeepers can rely on automated amount calculations, ensuring no manual errors in payment records. Pended makes it easier to manage customer relationships and maintain accurate credit records.",
-        image: "pended-app.png",
+          "Chatify is a feature-rich real-time chat application that enables users to exchange messages instantly. Users can create personal accounts, securely authenticate with JWT, and upload profile pictures using Cloudinary. The app supports both one-on-one and group conversations, with real-time updates powered by Socket.IO. Chatify ensures a responsive and smooth user experience with its modern UI, built using Tailwind CSS and Daisy UI. The app is designed to prioritize both performance and security, offering features like password encryption with bcrypt and real-time image sharing.",
+        image:
+          "https://res.cloudinary.com/dpcwzoeu4/image/upload/v1734512694/portfolio/projects/mjdfqnidxflr5mzwe2im.png",
+        live: "https://chatify-97hn.onrender.com/",
+        github: "https://github.com/sakibansari546/Chatify",
         created_by: "Sakib Ansari",
-        live: "https://pend.onrender.com",
-        github: "https://github.com/sakibansari546/.PEND",
         technology: {
           create: {
             backend: [
-              "Node.js - For building the server-side logic.",
-              "Express.js - To create and manage APIs efficiently.",
-              "MongoDB - To securely store customer and transaction data.",
-              "Math.js - For precise financial and mathematical calculations.",
-              "JWT - To manage user authentication securely.",
-              "Bcrypt - For encrypting sensitive user passwords.",
-              "Nodemailer - For email verification and notifications.",
+              "Express.js - For creating REST APIs and handling server-side logic.",
+              "Socket.IO - For enabling real-time communication between users.",
+              "MongoDB - For storing user data and chat messages.",
+              "JWT - For secure user authentication.",
+              "Cloudinary - For managing media uploads like profile pictures.",
+              "Bcrypt - For encrypting user passwords and ensuring data security.",
             ],
             frontend: [
-              "React.js - To build a responsive and user-friendly UI.",
-              "Tailwind CSS - For a sleek and modern design.",
-              "ShadCN UI - To use pre-designed, consistent UI components.",
-              "Redux Toolkit - For managing state efficiently.",
-              "React Hook Form - For easy and error-free form handling.",
-              "Framer Motion - For creating smooth animations.",
-              "Axios - To communicate seamlessly with the backend.",
+              "React.js - For building dynamic and responsive UI components.",
+              "Daisy UI - For easily implementing elegant, pre-designed UI components.",
+              "Tailwind CSS - For designing a custom, modern, and fully responsive interface.",
+              "Redux Toolkit - For managing global state efficiently.",
+              "React Hook Form - For building and validating forms with simplicity.",
+              "React Router DOM - For seamless navigation and route management.",
+              "Axios - For handling API requests and managing client-server communication.",
             ],
           },
         },
