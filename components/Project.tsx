@@ -6,8 +6,16 @@ import { CardBody, CardContainer, CardItem } from "./ui/3d-card";
 import Link from "next/link";
 import { BsGithub } from "react-icons/bs";
 
+export type ProjectType = {
+    id: string;
+    name: string;
+    short_desc: string;
+    image: string;
+    github: string;
+    live: string;
+};
 
-export default function Project({ project }) {
+export default function Project({ project }: { project: ProjectType }) {
     const { name, short_desc, image, github, live, id } = project;
 
     return (
@@ -29,7 +37,7 @@ export default function Project({ project }) {
                 </CardItem>
                 <CardItem as={Link} href={`/projects/${id}`} translateZ="100" className="w-full mt-4">
                     <Image
-                        src={image}
+                        src={image || "https://placeholder.com/35"}
                         height="1000"
                         width="1000"
                         className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"

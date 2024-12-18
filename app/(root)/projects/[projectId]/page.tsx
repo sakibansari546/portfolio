@@ -4,12 +4,30 @@ import Link from 'next/link';
 import { prisma } from '@/app/seeds/projects';
 import { BsGithub } from 'react-icons/bs';
 
+export type ProjectType = {
+    id: string;
+    name: string;
+    short_desc: string;
+    description: string | null;
+    image: string;
+    github: string;
+    live: string;
+    created_by: string;
+    createdAt: Date;
+    updatedAt: Date;
+    technology: {
+        id: string;
+        frontend: string[];
+        backend: string[];
+    };
+} | null;
+
 
 
 export default async function Page(props: { params: Promise<{ projectId: string }> }) {
     const { projectId } = await props.params;
 
-    const project = await prisma.project.findFirst({
+    const project: ProjectType = await prisma.project.findFirst({
         where: {
             id: projectId,
         },
@@ -28,7 +46,7 @@ export default async function Page(props: { params: Promise<{ projectId: string 
                         <div className="relative aspect-[16/9]">
                             <div className="absolute inset-0 bg-gradient-to-br from-[#FFD700] to-[#B8860B]">
                                 <div className="absolute inset-0 flex items-center justify-center">
-                                    <Image className='w-full h-full object-cover' src={project?.image} alt={project?.name} width={300} height={300} />
+                                    <Image className='w-full h-full object-cover' src={project?.image || ""} alt={project?.name || "Project Image"} width={300} height={300} />
                                 </div>
                             </div>
                         </div>
