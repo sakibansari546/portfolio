@@ -16,7 +16,7 @@ const Hero = () => {
                         </Cover>
                     </h1>
                     <p className="mt-4 font-normal text-sm sm:text-lg md:text-[1.2rem] text-black dark:text-white max-w-xl text-left leading-relaxed">
-                        Meet Sakib Ansari, a full-stack web developer passionate about creating smooth and impactful digital solutions. From designing user-friendly frontend interfaces to building strong backend systems, I love turning ideas into reality with clean and efficient code. Let's build something amazing together!
+                        Meet Sakib Ansari, a full-stack web developer passionate about creating smooth and impactful digital solutions. From designing user-friendly frontend interfaces to building strong backend systems, I love turning ideas into reality with clean and efficient code. Let&apos;s build something amazing together!
                     </p>
                     <p className="text-left text-black dark:text-white font-extralight mt-4 text-sm sm:text-lg">
                         ~ChatGpt

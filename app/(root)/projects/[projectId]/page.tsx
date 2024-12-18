@@ -49,10 +49,10 @@ export default async function Page(props: { params: Promise<{ projectId: string 
                         </p>
 
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                            <Link href={project?.github || "#"} className="flex-1 bg-white text-black font-bold py-2 px-4 rounded hover:bg-gray-200 transition-colors text-center flex items-center justify-center gap-3">
+                            <Link href={project?.github || "#"} target='__blank' className="flex-1 bg-white text-black font-bold py-2 px-4 rounded hover:bg-gray-200 transition-colors text-center flex items-center justify-center gap-3">
                                 <BsGithub /> <span>Github</span>
                             </Link>
-                            <Link href={project?.live || "#"} className="flex-1 border border-white text-white font-bold py-2 px-4 rounded hover:bg-white hover:text-black transition-colors text-center flex items-center justify-center gap-3">
+                            <Link href={project?.live || "#"} target='__blank' className="flex-1 border border-white text-white font-bold py-2 px-4 rounded hover:bg-white hover:text-black transition-colors text-center flex items-center justify-center gap-3">
                                 <CheckSquare size={18} /><span>Live Demo</span>
                             </Link>
                         </div>
@@ -68,7 +68,7 @@ export default async function Page(props: { params: Promise<{ projectId: string 
                     </div>
                     <div className=''>
                         <div className='mt-3'>
-                            <h3 className="text-xl font-semibold border-b border-gray-700 mb-4">Frontend</h3>
+                            <h3 className="text-xl font-semibold border-b border-gray-700 mb-4">Frontend -</h3>
                             <ul className="list-disc ml-10 text-md md:text-lg">
                                 {project?.technology?.frontend.map((tech, index) => (
                                     <li key={index} className="text-gray-300 pb-3 text-sm">{tech}</li>
@@ -76,7 +76,7 @@ export default async function Page(props: { params: Promise<{ projectId: string 
                             </ul>
                         </div>
                         <div className='mt-3'>
-                            <h3 className="text-xl font-semibold border-b border-gray-700 mb-4">Frontend</h3>
+                            <h3 className="text-xl font-semibold border-b border-gray-700 mb-4">Backend -</h3>
                             <ul className="list-disc ml-10 text-md md:text-lg">
                                 {project?.technology?.backend.map((tech, index) => (
                                     <li key={index} className="text-gray-300 pb-3 text-sm">{tech}</li>
