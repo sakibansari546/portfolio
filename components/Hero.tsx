@@ -1,6 +1,6 @@
 import React from 'react'
 import { Cover } from './ui/cover'
-// import { WavyBackground } from './ui/wavy-background'
+import { WavyBackground } from './ui/wavy-background'
 
 const Hero = () => {
     return (
@@ -28,7 +28,7 @@ const Hero = () => {
             {/* Wavy Background Section */}
             <section className="relative w-full h-[400px] md:h-[500px]">
                 {/* Wavy Background */}
-                {/* <WavyBackground className="absolute top-0 left-0 w-full h-full z-10" /> */}
+                <WavyBackground className="absolute top-0 left-0 w-full h-full z-10" />
 
                 {/* Button */}
                 <div className="absolute inset-0 flex items-center justify-center z-20 pl-4">
