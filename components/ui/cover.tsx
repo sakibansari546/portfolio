@@ -8,9 +8,11 @@ import { SparklesCore } from "@/components/ui/sparkles";
 export const Cover = ({
     children,
     className,
+    delay = 0, // Default value if no delay is passed
 }: {
     children?: React.ReactNode;
     className?: string;
+    delay?: number;
 }) => {
     const [hovered, setHovered] = useState(false);
 
