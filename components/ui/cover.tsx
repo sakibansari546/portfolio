@@ -8,11 +8,9 @@ import { SparklesCore } from "@/components/ui/sparkles";
 export const Cover = ({
     children,
     className,
-    delay = 0, // Default value if no delay is passed
 }: {
     children?: React.ReactNode;
     className?: string;
-    delay?: number;
 }) => {
     const [hovered, setHovered] = useState(false);
 
@@ -140,9 +138,9 @@ export const Cover = ({
                 {children}
             </motion.span>
             <CircleIcon className="absolute -right-[2px] -top-[2px]" />
-            <CircleIcon className="absolute -bottom-[2px] -right-[2px]" delay={0.4} />
-            <CircleIcon className="absolute -left-[2px] -top-[2px]" delay={0.8} />
-            <CircleIcon className="absolute -bottom-[2px] -left-[2px]" delay={1.6} />
+            <CircleIcon className="absolute -bottom-[2px] -right-[2px]" />
+            <CircleIcon className="absolute -left-[2px] -top-[2px]" />
+            <CircleIcon className="absolute -bottom-[2px] -left-[2px]" />
         </div>
     );
 };
