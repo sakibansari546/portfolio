@@ -6,7 +6,7 @@ import { Suspense } from "react";
 export default async function Page() {
 
     return (
-        <div>
+        <div className="py-8 px-4">
             <ProjectHeading />
             <Suspense fallback={<ProjectsSkeleton />} >
                 <ProjectWrapper />

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+
 import { Navbar } from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
@@ -18,7 +19,7 @@ export const metadata: Metadata = {
   title: "Sakib Ansari - Web Developer",
   description: "This is Sakib personal Portfolio",
   icons: {
-    icon: "/logo.jpg",
+    icon: "./logo.jpg",
   },
 };
 

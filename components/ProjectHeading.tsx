@@ -3,7 +3,7 @@ import { SparklesCore } from "./ui/sparkles";
 export default function ProjectHeading() {
     return (
         <>
-            <div className="mt-52 w-full bg-white dark:bg-black flex flex-col items-center overflow-hidden rounded-md">
+            <div className="mt-8 w-full bg-white dark:bg-black flex flex-col items-center overflow-hidden rounded-md">
                 <h1 className="md:text-7xl text-5xl lg:text-7xl font-bold text-center text-black dark:text-white relative z-20">
                     Projects
                 </h1>

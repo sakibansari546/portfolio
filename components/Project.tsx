@@ -4,6 +4,7 @@ import Image from "next/image";
 import React from "react";
 import { CardBody, CardContainer, CardItem } from "./ui/3d-card";
 import Link from "next/link";
+import { BsGithub } from "react-icons/bs";
 
 
 export default function Project({ project }) {
@@ -28,7 +29,7 @@ export default function Project({ project }) {
                 </CardItem>
                 <CardItem as={Link} href={`/projects/${id}`} translateZ="100" className="w-full mt-4">
                     <Image
-                        src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=2560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        src={image}
                         height="1000"
                         width="1000"
                         className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"
@@ -50,9 +51,9 @@ export default function Project({ project }) {
                         as={Link}
                         href={github}
                         target="__blank"
-                        className="px-4 py-2 rounded-xl dark:text-white hover:underline text-black text-sm font-bold"
+                        className="px-4 py-2 flex items-center gap-1.5 rounded-xl dark:text-white hover:underline text-black text-sm font-bold"
                     >
-                        Github
+                        <BsGithub /> Github
                     </CardItem>
                 </div>
             </CardBody>

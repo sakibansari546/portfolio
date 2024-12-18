@@ -6,8 +6,8 @@ import { LiaLinkedin } from "react-icons/lia";
 export default function Footer() {
     return (
         <>
-            <hr className="opacity-50" />
-            <footer className="dark:bg-black bg-white dark:text-white flex items-center justify-center w-full py-8  md:py-14">
+
+            <footer className="border-t border-gray-700 dark:bg-black bg-white dark:text-white flex items-center justify-center w-full py-8  md:py-14">
                 <div className="">
                     <div className="flex gap-3 items-center text-center justify-center">
                         <Image
@@ -21,7 +21,7 @@ export default function Footer() {
                     </div>
                     <div className="text-center space-x-10 py-5 font-light">
                         <Link href='/about'>About</Link>
-                        <Link href='/project'>Projects</Link>
+                        <Link href='/projects'>Projects</Link>
                         <Link href='/contact'>Contact</Link>
                     </div>
                     <div className="flex items-center justify-center w-full gap-8 text-lg text-neutral-700 dark:text-netural-200">
