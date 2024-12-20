@@ -34,3 +34,9 @@ model Technology {
   frontend String[]
   Project  Project?
 }
+
+model Admin {
+  id       String @id @default(uuid())
+  email    String
+  password String
+}
