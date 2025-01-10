@@ -79,11 +79,6 @@ export default async function Page(props: { params: Promise<{ projectId: string 
 
                 {/* Tabs */}
                 <div className="mt-14">
-                    <div className="border-b border-gray-700 mb-8">
-                        <div className="-mb-px flex" aria-label="Tabs">
-                            <h3 className='md:text-4xl text-2xl font-bold mb-1'>Tech Stack</h3>
-                        </div>
-                    </div>
                     <div className=''>
                         <div className='mt-3'>
                             <h3 className="text-xl font-semibold border-b border-gray-700 mb-4">Frontend -</h3>
