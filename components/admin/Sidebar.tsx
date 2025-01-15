@@ -7,6 +7,8 @@ import { BarChart, FolderPlus, LayoutDashboard, X } from 'lucide-react'
 import { cn } from "@/lib/utils"
 import { Button } from "@/components/ui/button"
 import { ScrollArea } from "@/components/ui/scroll-area"
+import { UserButton } from "@clerk/nextjs"
+
 
 const routes = [
     {
@@ -35,7 +37,8 @@ interface SidebarProps {
 }
 
 export function Sidebar({ open, onClose }: SidebarProps) {
-    const pathname = usePathname()
+    const pathname = usePathname();
+
 
     return (
         <div
@@ -76,6 +79,10 @@ export function Sidebar({ open, onClose }: SidebarProps) {
                         </Link>
                     ))}
                 </nav>
+                <div className="p-4">
+                    <UserButton afterSignOutUrl="/admin/sign-in" />
+                    {/* <span>{user?.firstname}</span> */}
+                </div>
             </ScrollArea>
         </div>
     )
