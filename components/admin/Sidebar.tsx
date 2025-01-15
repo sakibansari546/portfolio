@@ -80,7 +80,7 @@ export function Sidebar({ open, onClose }: SidebarProps) {
                     ))}
                 </nav>
                 <div className="p-4">
-                    <UserButton afterSignOutUrl="/admin/sign-in" />
+                    <UserButton signInUrl="/sign-in" />
                     {/* <span>{user?.firstname}</span> */}
                 </div>
             </ScrollArea>
