@@ -1,8 +1,8 @@
 import Image from 'next/image'
 import { CheckSquare, } from 'lucide-react'
 import Link from 'next/link';
-import { prisma } from '@/app/seeds/projects';
 import { BsGithub } from 'react-icons/bs';
+import { prisma } from '@/lib/prisma';
 
 export type ProjectType = {
     id: string;

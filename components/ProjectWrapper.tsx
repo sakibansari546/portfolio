@@ -1,4 +1,4 @@
-import { prisma } from "@/app/seeds/projects";
+import { prisma } from "@/lib/prisma";
 import Project from "./Project";
 
 export type ProjectsType = Array<{
